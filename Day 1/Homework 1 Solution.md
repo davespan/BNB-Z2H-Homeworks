@@ -1,6 +1,6 @@
 # Solution
 
-A decentralized version of a game like Monopoly would be an interesting concept to explore. Such a version of the game would involve multiple nodes, where each node represents a player, and the game state is distributed across all nodes in a peer-to-peer fashion.
+A decentralized version of the Monopoly game would involve multiple nodes, where each node represents a player, and the game state is distributed across all nodes in a peer-to-peer fashion.
 
 To prevent cheating, the game would need to implement some form of consensus mechanism, such as a proof-of-work or proof-of-stake algorithm, to ensure that all players are playing by the rules. This would require each node to perform a certain amount of work or stake a certain amount of cryptocurrency to validate transactions and ensure that the game state is accurate.
 
