@@ -81,7 +81,7 @@ For each function, the JSON object contains the following properties:
 - **stateMutability**: The state mutability of the function, which can be `pure`, `view`, `payable`, or `nonpayable`.
 - **type**: The type of function, which can be `function`, `constructor`, `fallback`, or `receive`. In this case, both functions are of type `function`.
 
-This bit of the JSON array specifies the `retrieve` function:
+This field of the JSON array specifies the `retrieve` function:
 
 ```json
 {
@@ -101,7 +101,7 @@ This bit of the JSON array specifies the `retrieve` function:
 
 a `view` function that takes no inputs and returns a `uint256` value. In this case, the `retrieve` function retrieves a stored value from the smart contract (i.e. `number`).
 
-This bit of the JSON array specifies the `store` function:
+This field of the JSON array specifies the `store` function:
 
 ```json
 {
