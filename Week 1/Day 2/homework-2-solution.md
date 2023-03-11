@@ -1,4 +1,12 @@
-# Solution
+# Homework 2
+
+Go back to [Week 1](/Week%201/week-1-homeworks-solutions.md)
+
+Go back to the [Table of Contents](/README.md)
+
+---
+
+## Solution
 
 1. How many users are holding the pancake swap token `cake`?
 
@@ -27,3 +35,5 @@
 7. What is special about this [transaction](https://bscscan.com/tx/0x1bfbff8411ed44e609d911476b0d35a28284545b690902806ea0a7ff0453e931)?
 
     The `PancakeSwap: Router v2` contract was created.
+
+Back to [top](#homework-2)

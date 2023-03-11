@@ -1,4 +1,12 @@
-# Solution
+# Homework 1
+
+Go back to [Week 1](/Week%201/week-1-homeworks-solutions.md)
+
+Go back to the [Table of Contents](/README.md)
+
+---
+
+## Solution
 
 A decentralized version of the Monopoly game would involve multiple nodes, where each node represents a player, and the game state is distributed across all nodes in a peer-to-peer fashion.
 
@@ -21,3 +29,5 @@ One possible approach to turn-taking is to use a random number generator to sele
 Alternatively, a voting system could be used to decide which player takes the next turn. In this scenario, each player would get to vote on the next player to take their turn, and the player with the most votes would go next. This approach would require more coordination and communication between players, but it could also lead to a more democratic and collaborative gameplay experience.
 
 Another important consideration in the turn system is how to handle timeouts or players who disconnect from the game unexpectedly. To address this issue, a timeout mechanism could be implemented that automatically ends the turn of a player who does not complete their turn within a certain time frame. Alternatively, players could be given a limited amount of time to complete their turn, and if they exceed this time limit, their turn would be automatically skipped.
+
+Back to [top](#homework-1)
