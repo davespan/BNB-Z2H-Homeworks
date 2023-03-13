@@ -146,7 +146,8 @@ contract DogCoin {
 
     function transfer(uint256 _amount, address _to) public {
         require(balances[msg.sender] >= _amount, "Insufficient funds.");
-        
+        require(msg.sender != _to, "Cannot send funds to yourself.");
+ 
         balances[msg.sender] -= _amount;
         balances[_to] += _amount;
 
