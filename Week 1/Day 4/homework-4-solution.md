@@ -2,8 +2,8 @@
 
 ## Solutions
 
-- [Solution 1](#solution-1)
-- [Solution 2](#solution-2)
+- [Bootcamp Contract](#bootcamp-contract)
+- [DogCoin Contract](#dogcoin-contract)
 
 Go back to [Week 1](/Week%201/week-1-homeworks-solutions.md)
 
@@ -11,7 +11,7 @@ Go back to the [Table of Contents](/README.md)
 
 ---
 
-## Solution 1
+## Bootcamp Contract 
 
 To the [Bootcamp.sol](https://gist.github.com/extropyCoder/77487267da199320fb9c852cfde70fb1) contract:
 
@@ -59,7 +59,7 @@ Back to [top](#solutions)
 
 ---
 
-## Solution 2
+## DogCoin Contract
 
 1. In Remix, create a new file called `DogCoin.sol`.
 2. Define the pragma compiler version to `0.8.18`.
