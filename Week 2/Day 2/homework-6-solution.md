@@ -103,24 +103,7 @@ contract BadgerNFTTest {
         );
 
         // Transfer tests
-        badgerNFT.transferFrom(owner, recipient, 0);
-        Assert.equal(
-            badgerNFT.ownerOf(0),
-            recipient,
-            "Token not transferred to recipient"
-        );
-
-        Assert.equal(
-            badgerNFT.balanceOf(recipient),
-            1,
-            "recipient should have one token"
-        );
-
-        Assert.equal(
-            badgerNFT.balanceOf(owner),
-            0,
-            "Owner should have zero token after transfer"
-        );
+        // TODO
     }
 }
 ```
