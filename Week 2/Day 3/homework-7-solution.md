@@ -63,7 +63,7 @@ contract BadLotteryGame {
 
 ### Problems
 
-- **Floating Pragma**: Tt is generally recommended to lock the pragma version for production contracts to ensure that the code behaves consistently across different compiler versions. 
+- **Floating Pragma**: It is generally recommended to lock the pragma version for production contracts to ensure that the code behaves consistently across different compiler versions. 
 
 - **Outdated compiler version**: The compiler version used in the contract is outdated and may have security vulnerabilities and other issues.
 
