@@ -20,7 +20,7 @@ We now want to create an `NFT`:
 3. Give your NFT a name and a symbol.
 >**Answer**: Name: `BadgerNFT`, Symbol: `BDGR`.
 4. Deploy your contract to the test network and send some NFTs.
->**Answer**: [Contract on the testnet](https://testnet.bscscan.com/address/0xf4532a6eb5bb1692825a8900cca1e17c49b9378d).
+>**Answer**: [Contract on the testnet](https://testnet.bscscan.com/address/0xc153a7e62d2ce3defd28cc89599decf44828a858).
 
 For now we won't associate a digital asset with our token.
 
@@ -82,8 +82,8 @@ contract BadgerNFTTest {
 
     function beforeEach() public {
         badgerNFT = new BadgerNFT();
-        owner = msg.sender;
-        recipient = address(0x1);
+        owner = TestsAccounts.getAccount(0);
+        recipient = TestsAccounts.getAccount(1);
     }
 
     function test_safeMint() public {
