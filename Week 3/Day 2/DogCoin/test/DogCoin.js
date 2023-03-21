@@ -1,44 +1,3 @@
-# Homework 10
-
-Go back to [Week 3](/Week%203/week-3-homeworks-solutions.md)
-
-Go back to the [Table of Contents](/README.md)
-
----
-
-## Solution
-
-For the DogCoin contract you created:
-
-1. Add an internal function called `_mint` to increase the total supply, any increase in supply should be given to the contract owner.
-
->You can find the project [here](/Week%203/Day%202/DogCoin/).
->
->**DogCoin.sol**
-
-```sol
-<SNIP>
-
-    function mint() public onlyOwner {
-        _mint();
-    }
-
-    function _mint() internal onlyOwner {
-        increaseTotalSupply();
-        balances[owner] += incrementStep;
-    }
-
-<SNIP>
-```
-
-2. Add some unit tests to test the following:
-    - The total supply can be increased in steps of 1000.
-    - Only the owner can increase the total supply.
-    - The correct events are produced when transfers occur.
-
->**DogCoin.js**
-
-```javascript
 const { expect } = require("chai");
 
 const { loadFixture } = require("@nomicfoundation/hardhat-network-helpers");
@@ -87,6 +46,3 @@ describe("DogCoin contract", function () {
     });
   });
 });
-```
-
-Back to [top](#homework-10)

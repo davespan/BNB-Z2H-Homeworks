@@ -63,5 +63,3 @@ Contract' tabs.
 >**Answer**: [Code](https://testnet.bscscan.com/address/0xd07a57c5fd3e8286b13960eac2514be8c44230ba#code), [Read Contract](https://testnet.bscscan.com/address/0xd07a57c5fd3e8286b13960eac2514be8c44230ba#readContract), [Write Contract](https://testnet.bscscan.com/address/0xd07a57c5fd3e8286b13960eac2514be8c44230ba#writeContract).
 
 Back to [top](#solutions)
-
----

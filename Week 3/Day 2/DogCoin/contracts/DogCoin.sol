@@ -39,6 +39,15 @@ contract DogCoin {
         emit SupplyChanged(totalSupply);
     }
 
+    function mint() public onlyOwner {
+        _mint();
+    }
+
+    function _mint() internal onlyOwner {
+        increaseTotalSupply();
+        balances[owner] += incrementStep;
+    }
+
     function transfer(uint256 _amount, address _to) public {
         require(balances[msg.sender] >= _amount, "Insufficient funds.");
         require(msg.sender != _to, "Cannot send funds to yourself.");

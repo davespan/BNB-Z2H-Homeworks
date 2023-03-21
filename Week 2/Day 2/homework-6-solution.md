@@ -109,6 +109,3 @@ contract BadgerNFTTest {
 ```
 
 Back to [top](#solutions)
-
----
-

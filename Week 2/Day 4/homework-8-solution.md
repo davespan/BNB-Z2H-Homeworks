@@ -10,7 +10,9 @@ Go back to the [Table of Contents](/README.md)
 
 Using Hardhat:
 1. Create a project for your Badger coin.
+
 >You can find the project [here](/Week%202/Day%204/BadgerCoin/).
+
 2. Write unit tests for your Badger coin contract showing that:
     - The total supply is initially 1000000.
     - That the number of decimals is 18.

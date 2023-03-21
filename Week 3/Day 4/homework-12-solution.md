@@ -24,5 +24,3 @@ Back to [top](#solutions)
 TODO
 
 Back to [top](#solutions)
-
----
