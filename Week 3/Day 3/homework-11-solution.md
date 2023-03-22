@@ -10,8 +10,6 @@ Go back to the [Table of Contents](/README.md)
 
 Create a project and:
 - Use `forge init <project_name>` for the default template or use this [template]().
->You can find the project [here](/Week%203/Day%203/hw_11/).
->
 >**PaulRBerg template** was used.
 - Run the tests supplied to familiarise yourself with Foundry.
 
