@@ -1,26 +1,17 @@
 # Homework 12
 
-## Solutions
-
-- [TODO](#todo)
-- [TODO](#todo)
-
 Go back to [Week 3](/Week%203/week-3-homeworks-solutions.md)
 
 Go back to the [Table of Contents](/README.md)
 
 ---
 
-## TODO
+## Solution
 
-TODO
+Gas Optimisation Game:
+- Follow the `README` instructions in this
+[repo](https://github.com/ExtropyIO/ExpertSolidityBootcamp/tree/main/exercises/gas).
 
-Back to [top](#solutions)
+>Coming soon.
 
----
-
-## TODO
-
-TODO
-
-Back to [top](#solutions)
+Back to [top](#homework-12)
