@@ -1,26 +1,13 @@
 # Homework 13
 
-## Solutions
-
-- [TODO](#todo)
-- [TODO](#todo)
-
 Go back to [Week 4](/Week%204/week-4-homeworks-solutions.md)
 
 Go back to the [Table of Contents](/README.md)
 
 ---
 
-## TODO
+## Solution
 
-TODO
+Completed [Homework 12](/Week%203/Day%204/homework-12-solution.md).
 
-Back to [top](#solutions)
-
----
-
-## TODO
-
-TODO
-
-Back to [top](#solutions)
+Back to [top](#homework-13)
