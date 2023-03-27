@@ -36,7 +36,7 @@ Gas Optimisation Game:
 ·----------------------------------|--------------|-------------|-------------|---------------|-------------·
 ```
 
-**Optimised Contract**:
+**Optimised Contract** (as seen in class):
 
 ```sol
 // SPDX-License-Identifier: UNLICENSED
