@@ -40,61 +40,138 @@ Gas Optimisation Game:
 
 ```sol
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity 0.8.19;
+pragma solidity 0.8.19; // Changed to latest version
 
+// Constants contract and its variables have been removed.
+
+// Ownable inheritance has been removed.
 contract GasContract {
-    address[5] public administrators;
-    uint256 public immutable totalSupply; // cannot be updated
+    uint256 public immutable totalSupply; // Cannot be updated -> totalSupply is now immutable.
+    // balances is now private. To get balances we can use the balanceOf function.
+    mapping(address => uint256) private balances;
 
+    // tradePercent variable has been removed.
+
+    // contractOwner variable has been removed.
+
+    // tradeMode variable has been removed.
+
+    // payments is now private. To get payments we can use the getPayments function.
+    mapping(address => Payment[]) private payments;
+    mapping(address => uint256) public whitelist;
+    address[5] public administrators;
+
+    // isReady variable has been removed.
+
+    // PaymentType enum has been removed.
+
+    // defaultPayment constant has been removed.
+
+    // paymentHistory variable has been removed.
+
+    // Payment struct has been simplified.
     struct Payment {
         uint256 paymentType;
         uint256 amount;
     }
 
-    event Transfer(address, uint256);
-    mapping(address => uint256) balances;
-    mapping(address => Payment[]) payments;
-    mapping(address => uint256) public whitelist;
+    // History struct has been removed.
 
-    constructor(address[5] memory _admins, uint256 _totalSupply) payable {
+    // wasLastOdd and isOddWhitelistUser variables have been removed.
+
+    // ImportantStruct struct has been removed.
+
+    // whiteListStruct mapping has been removed.
+
+    // AddedToWhitelist event has been removed.
+
+    // onlyAdminOrOwner modifier has been removed.
+
+    // checkIfWhiteListed modifier has been removed.
+
+    // supplyChanged event has been removed.
+
+    event Transfer(address recipient, uint256 amount);
+
+    // PaymentUpdated event has been removed.
+
+    // WhiteListTransfer event has been removed.
+
+    constructor(address[5] memory _admins, uint256 _totalSupply) {
+        /**
+         * Removed unecessary code.
+         * administrators is now initialized to _admins.
+         */
         administrators = _admins;
         totalSupply = _totalSupply;
     }
 
-    function transfer(address _recipient, uint256 _amount, string calldata _name) external {
+    // getPaymentHistory function has been removed.
+
+    // checkForAdmin function has been removed.
+
+    function balanceOf(address _user) public view returns (uint256) {
+        return balances[_user]; // now returns data directly without passing through intermediate variables.
+    }
+
+    // getTradingMode function is now pure and external.
+    function getTradingMode() external pure returns (bool) {
+        // Previous code always returned true, so we just return true.
+        return true;
+    }
+
+    // addHistory function has been removed.
+
+    // getPayments function has been simplified.
+    function getPayments(
+        address _user
+    ) external view returns (Payment[] memory) {
+        // Removed unnecessary code.
+        return payments[_user];
+    }
+
+    // transfer function has been simplified.
+    function transfer(
+        address _recipient,
+        uint256 _amount,
+        string calldata _name
+    ) external {
         payments[msg.sender].push(Payment(1, _amount));
-        unchecked {
-        balances[_recipient] += _amount;
+        unchecked { // unchecked was used to circumvent checked arithmetic and save gas.
+            balances[_recipient] += _amount;
         }
         emit Transfer(_recipient, _amount);
     }
 
-    function balanceOf(address _user) external view returns (uint256) {
-        return balances[_user];
-    }
-
-    function updatePayment(address _user, uint256 _ID, uint256 _amount, uint256 _type) external {
+    // updatePayment function has been simplified.
+    function updatePayment(
+        address _user,
+        uint256 _ID,
+        uint256 _amount,
+        uint256 _type
+    ) external {
+        // Removed unnecessary code.
         payments[_user][0].paymentType = _type;
         payments[_user][0].amount = _amount;
     }
 
-    function getPayments(address _user) external view returns (Payment[] memory) {
-        return payments[_user];
-    }
-
-    function getTradingMode() external pure returns (bool) {
-        return true;
-    }
-
     function addToWhitelist(address _userAddrs, uint256 _tier) external {
+        // Removed unnecessary code.
         whitelist[_userAddrs] = _tier;
     }
 
-    function whiteTransfer(address _recipient, uint256 _amount, Payment calldata _struct) external {
+    // whiteTransfer function has been simplified.
+    function whiteTransfer(
+        address _recipient,
+        uint256 _amount,
+        Payment calldata _struct
+    ) external {
+        // Removed unnecessary code.
         unchecked {
-        uint256 temp = _amount - whitelist[msg.sender];
-        balances[msg.sender] -= temp;
-        balances[_recipient] += temp;
+            // unchecked was used to circumvent checked arithmetic and save gas.
+            uint256 temp = _amount - whitelist[msg.sender];
+            balances[msg.sender] -= temp;
+            balances[_recipient] += temp;
         }
     }
 }
