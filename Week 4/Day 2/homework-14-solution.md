@@ -1,26 +1,17 @@
 # Homework 14
 
-## Solutions
-
-- [TODO](#todo)
-- [TODO](#todo)
-
 Go back to [Week 4](/Week%204/week-4-homeworks-solutions.md)
 
 Go back to the [Table of Contents](/README.md)
 
 ---
 
-## TODO
+## Solution
 
-TODO
+NFT Storage:
+1. Create an account on [nft.storage](https://nft.storage/).
+2. Upload a file that you wish to associate with your Badger NFT.
+3. Copy the CID, this will be the `token_URI` for your NFT.
+4. Create an NFT with this token URI.
 
-Back to [top](#solutions)
-
----
-
-## TODO
-
-TODO
-
-Back to [top](#solutions)
+Back to [top](#homework-14)
