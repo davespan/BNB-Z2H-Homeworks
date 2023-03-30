@@ -21,7 +21,7 @@ describe("BadgerNFT contract", function () {
       const { badgerNFT, owner, uri } = await loadFixture(
         deployTokenFixture
       );
-      await badgerNFT.safeMint(owner.address, uri)
+      await badgerNFT.safeMint(owner.address, uri);
       expect(await badgerNFT.balanceOf(owner.address)).to.equal(1);
     });
   });
