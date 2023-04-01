@@ -9,7 +9,7 @@ Go back to the [Table of Contents](/README.md)
 ## Solution
 
 Create a project and:
-- Use `forge init <project_name>` for the default template or use this [template]().
+- Use `forge init <project_name>` for the default template or use this [template](https://github.com/PaulRBerg/foundry-template).
 >**PaulRBerg template** was used.
 - Run the tests supplied to familiarise yourself with Foundry.
 
