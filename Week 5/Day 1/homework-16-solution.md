@@ -91,10 +91,10 @@ $ npx hardhat run scripts/factory-address.js
 ```
 
 5. Write some unit tests, as if you were testing the various contracts. Your tests should test:
-    - Interaction with the pair contract for **LEGO** and **BUSD**; what are the reserves and when were they updated?
+    - Interaction with the pair contract for **LEGO** and **BUSD-T**; what are the reserves and when were they updated?
     - Impersonation of an address such as this one : `0xffefE959d8bAEA028b1697ABfc4285028d6CEB10`
     to obtain some **LEGO**.
-    - Interaction with the router contract to swap some **LEGO** for **BUSD**
+    - Interaction with the router contract to swap some **LEGO** for **BUSD-T**
     by using the `swapExactTokensForTokens` function.
 >TODO
 
