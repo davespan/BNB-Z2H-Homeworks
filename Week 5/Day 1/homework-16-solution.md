@@ -67,10 +67,32 @@ $ echo $((16#38))
 ```
 
 4. Connect to your local fork and use the contract details for Pancake Swap, make a call to the `factory` function to get the address of the factory contract, check this by reading the same function on BscScan.
->TODO
+>**factory-address.js**
+```javascript
+const { ethers } = require("hardhat");
+
+async function main() {
+  const contractAbi = require('../contracts/PancakeRouter.json');
+  const contractAddress = "0x10ED43C718714eb63d5aA57B78B54704E256024E";
+  const contract = await ethers.getContractAt(contractAbi, contractAddress);
+
+  const result = await contract.factory();
+
+  console.log(result);
+}
+
+main();
+```
+>The address we get is the same read on BscScan:
+
+```bash
+$ npx hardhat run scripts/factory-address.js
+0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73
+```
+
 5. Write some unit tests, as if you were testing the various contracts. Your tests should test:
-    - Interaction with the pair contract for **LEGO** and **BUSD**, what are the reserves and when were they updated?
-    - Impersonation an address such as this one : `0xffefE959d8bAEA028b1697ABfc4285028d6CEB10`
+    - Interaction with the pair contract for **LEGO** and **BUSD**; what are the reserves and when were they updated?
+    - Impersonation of an address such as this one : `0xffefE959d8bAEA028b1697ABfc4285028d6CEB10`
     to obtain some **LEGO**.
     - Interaction with the router contract to swap some **LEGO** for **BUSD**
     by using the `swapExactTokensForTokens` function.
