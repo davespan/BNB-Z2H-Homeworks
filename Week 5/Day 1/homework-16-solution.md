@@ -70,6 +70,7 @@ $ echo $((16#38))
 
 4. Connect to your local fork and use the contract details for Pancake Swap, make a call to the `factory` function to get the address of the factory contract, check this by reading the same function on BscScan.
 >**factory-address.js**
+
 ```javascript
 const { ethers } = require("hardhat");
 
@@ -99,6 +100,7 @@ $ npx hardhat run scripts/factory-address.js
     - Interaction with the router contract to swap some **LEGO** for **BUSD-T**
     by using the `swapExactTokensForTokens` function.
 >**Tests.js**
+
 ```javascript
 const { expect } = require("chai");
 const helpers = require("@nomicfoundation/hardhat-network-helpers");
