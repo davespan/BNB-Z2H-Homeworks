@@ -165,4 +165,13 @@ describe("ShameCoin contract", function () {
 });
 ```
 
+>Generating the docs using `hardhat-docgen`:
+
+```bash
+$ npx hardhat docgen
+<SNIP>
+$ ls docs 
+index.html              main.js                 main.js.LICENSE.txt 
+```
+
 Back to [top](#homework-19)
