@@ -13,5 +13,7 @@ Using this [contract](https://gist.github.com/extropyCoder/11df000e4b0d7c94510fb
 - Use the hardhat [plugin](https://docs.openzeppelin.com/upgrades-plugins/1.x/#install-hardhat) to deploy the contract.
 - For the next version, change the `processPayment` function to update the payout block to be the current block.
 - Use the hardhat plugin to deploy the upgraded contract.
+
 >TODO
+
 Back to [top](#homework-17)
