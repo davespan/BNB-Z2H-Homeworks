@@ -10,7 +10,7 @@ Go back to the [Table of Contents](/README.md)
 
 After compiling the following contract:
 
-```sol
+```solidity
 // SPDX-License-Identifier: GPL-3.0
 
 pragma solidity >=0.7.0 <0.9.0;

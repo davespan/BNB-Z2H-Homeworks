@@ -24,7 +24,7 @@ To the [Bootcamp.sol](https://gist.github.com/extropyCoder/77487267da199320fb9c8
 
 **Bootcamp.sol**:
 
-```sol
+```solidity
 // SPDX-License-Identifier: None
 
 pragma solidity 0.8.17;

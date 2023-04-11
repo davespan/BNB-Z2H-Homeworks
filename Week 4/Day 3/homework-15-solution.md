@@ -16,7 +16,7 @@ Using the Badger Coin you created in previous homeworks:
 >
 >**BadgerCoin.sol**
 
-```sol
+```solidity
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.18;

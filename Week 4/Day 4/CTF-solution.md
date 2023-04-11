@@ -27,7 +27,7 @@ With the following solutions you get **Max score** but they are not gas efficien
 
 **Level0.sol**
 
-```sol
+```solidity
 pragma solidity 0.8.19;
 
 contract Level_0_Solution {
@@ -40,7 +40,7 @@ contract Level_0_Solution {
 
 **Level1.sol**
 
-```sol
+```solidity
 pragma solidity 0.8.19;
 
 contract Level_1_Solution {
@@ -63,7 +63,7 @@ contract Level_1_Solution {
 
 **Level2.sol**
 
-```sol
+```solidity
 pragma solidity 0.8.19;
 
 contract Level_2_Solution {
@@ -88,7 +88,7 @@ contract Level_2_Solution {
 
 **Levels3.sol**
 
-```sol
+```solidity
 pragma solidity 0.8.19;
 
 contract Level_3_Solution {
@@ -103,7 +103,7 @@ contract Level_3_Solution {
 
 **Level4.sol**
 
-```sol
+```solidity
 pragma solidity 0.8.19;
 
 contract Level_4_Solution {

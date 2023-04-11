@@ -14,7 +14,7 @@ You do not need to fix any of the problems.
 
 **BadLottery.sol**
 
-```sol
+```solidity
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.4;

@@ -38,7 +38,7 @@ Gas Optimisation Game:
 
 **Optimised Contract** (as seen in class):
 
-```sol
+```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity 0.8.19; // Changed to latest version
 

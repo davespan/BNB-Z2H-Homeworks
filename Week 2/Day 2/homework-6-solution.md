@@ -26,7 +26,7 @@ For now we won't associate a digital asset with our token.
 
 You can use the Open Zeppelin libraries to help with this.
 
-```sol
+```solidity
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.9;
@@ -60,7 +60,7 @@ Write unit tests to check that you can:
 1. Mint new NFTs
 2. Transfer an NFT
 
-```sol
+```solidity
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.9;
@@ -101,9 +101,6 @@ contract BadgerNFTTest {
             1,
             "Owner should have one token"
         );
-
-        // Transfer tests
-        // TODO
     }
 }
 ```

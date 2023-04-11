@@ -21,7 +21,7 @@ Here is the contract:
 
 **BadgerNFT.sol**
 
-```sol
+```solidity
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.18;

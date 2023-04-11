@@ -22,7 +22,7 @@ Create a `BEP20` contract with the following details:
 
 **BadgeCoin.sol**
 
-```sol
+```solidity
 // SPDX-License-Identifier: MIT
 
 pragma solidity 0.8.9;

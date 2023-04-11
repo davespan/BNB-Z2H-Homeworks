@@ -16,7 +16,7 @@ For the DogCoin contract you created:
 >
 >**DogCoin.sol**
 
-```sol
+```solidity
 <SNIP>
 
     function mint() public onlyOwner {
